@@ -72,8 +72,6 @@ Chart <- setRefClass(
             # TODO: Fix attribute 'files' so that one may print more than one chart on a page.
             
             opt$chart$renderTo <<- as.character(id)
-            opt$credits$text <<- "charts: An R wrapper for Highcharts JS"
-            opt$credits$href <<- "https://github.com/reinholdsson/charts"
             
             html <- sprintf("<script type=\"text/javascript\">
                                     (function($){
