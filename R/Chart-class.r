@@ -85,9 +85,9 @@ Chart <- setRefClass(
             
             if (files) {
                 js <- file.path(system.file(package = "charts"), c(
-                    "jquery.min.js", 
-                    "highcharts.js",
-                    "highcharts-more.js"))
+                    "lib/jquery-1.8.3.min.js", 
+                    "lib/Highcharts-2.3.5/js/highcharts.js",
+                    "lib/Highcharts-2.3.5/js/highcharts-more.js"))
                 
                 js <- sprintf("<script type=\"text/javascript\">
                                     %s
